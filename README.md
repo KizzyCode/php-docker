@@ -1,6 +1,6 @@
 # kizzycode/php
 
-A Debian-based, self-contained PHP application server image (php, apache).
+A Debian-based, self-contained PHP application server image (php-fpm, nginx).
 
 ### Container users
 Container users may interact with the external environment via mountpoints:
