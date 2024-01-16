@@ -1,0 +1,8 @@
+services:
+  php:
+    build: ./
+    ports:
+      - "8080:8080/tcp"
+    volumes:
+      # Webroot data directory; should be owned by UID 10000
+      - ./example:/var/webroot:rw
