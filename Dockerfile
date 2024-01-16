@@ -2,7 +2,7 @@ FROM debian:latest
 
 # Upgrade system and install base dependencies
 ENV DEBIAN_FRONTEND noninteractive
-ENV PACKAGES nginx php php-fpm supervisor
+ENV PACKAGES nginx php-fpm supervisor
 RUN apt-get update \
     && apt-get upgrade --yes \
     && apt-get install --yes --no-install-recommends ${PACKAGES} \
